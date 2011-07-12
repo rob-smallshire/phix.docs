@@ -71,6 +71,10 @@ units such as pixels.  Any units which can be used in HTML can be used here.</li
 link <cite>Open in new window</cite> will be added underneath the rendered diagram.</li>
 <li><cite>align</cite> - Can take the values <cite>left</cite>, <cite>right</cite>, <cite>center</cite>.</li>
 <li><cite>alt</cite> - Alternative text to be used if the diagram cannot be rendered.</li>
+<li><cite>postprocess</cite> - Pipe the SVG output from ArgoUML through this command before
+embedding the output in the HTML.  This option can be used with arbitrary
+programs to tweak the SVG output. Phix understands how to expand environment
+variables in the command string using a cross-platform <cite>$VAR</cite> syntax.</li>
 </ul>
 </div></blockquote>
 </div>
