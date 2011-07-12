@@ -1,0 +1,140 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to Phix &mdash; Phix v0.5 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Phix v0.5 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Phix v0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-phix">
+<h1>Welcome to Phix<a class="headerlink" href="#welcome-to-phix" title="Permalink to this headline">¶</a></h1>
+<p>Phix is a Sphinx extension for embedding ArgoUML diagrams into Sphinx output.
+Phix extends Sphinx by providing a single additional directive which allows
+specification of an ArgoUML zargo file and the name of a diagram within that
+file.  The most basic usage is:</p>
+<div class="highlight-python"><pre>.. argouml:: my_uml_model.zargo
+   :diagram: My Class Diagram</pre>
+</div>
+<p>which will result in a single diagram being placed in the rendered HTML output
+from Sphinx.</p>
+<p>Usually, other options will be used with the ArgoUML directive to control the
+output:</p>
+<div class="highlight-python"><pre>.. argouml:: my_uml_model.zargo
+   :diagram: My Sequence Diagram
+   :width: 100%
+   :height: 800 px
+   :new-window:</pre>
+</div>
+<p>The full list of supported options is:</p>
+<blockquote>
+<div><ul class="simple">
+<li><cite>diagram</cite> - compulsory option for specifying the name of the diagram which
+is to be included.</li>
+<li><cite>width</cite> - the width of the diagram, either as a percentage or in absolute
+units such as pixels.  Any units which can be used in HTML can be used here.</li>
+<li><cite>height</cite> - the height of the diagram, either as a percentage or in absolute
+units such as pixels.  Any units which can be used in HTML can be used here.</li>
+<li><cite>new-window</cite> - an optional flag which takes no arguments.  If present, a
+link <cite>Open in new window</cite> will be added underneath the rendered diagram.</li>
+<li><cite>align</cite> - Can take the values <cite>left</cite>, <cite>right</cite>, <cite>center</cite>.</li>
+<li><cite>alt</cite> - Alternative text to be used if the diagram cannot be rendered.</li>
+<li><cite>postprocess</cite> - Pipe the SVG output from ArgoUML through this command before
+embedding the output in the HTML.  This option can be used with arbitrary
+programs to tweak the SVG output. Phix understands how to expand environment
+variables in the command string using a cross-platform <cite>$VAR</cite> syntax.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/phix_70x55.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to Phix</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Phix v0.5 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Robert Smallshire.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
